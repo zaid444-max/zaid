@@ -27,7 +27,7 @@ if (topbarButt) {
   })
 }
 
-const serverIP = 'ipower-backend.onrender.com';
+const serverIP = 'ipower-backend-2.onrender.com';
 const port = 3000;
 
 const returnIcon = document.querySelector('.fa-arrow-left');

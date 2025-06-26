@@ -37,6 +37,10 @@ const discriptionModels = document.querySelector('.discriptionModels');
 const languageSelect = document.querySelector('.langause-select');
 const workerNamesDiv = document.querySelector('.worker-names-div');
 
+window.addEventListener('pageshow', () => {
+  init(); // ← this is your function that builds the UI
+});
+
 //square divs here
 const squareContainerArray = [];
 let latestFetchId = 0;

@@ -41,6 +41,8 @@ window.addEventListener('pageshow', () => {
   init(); // ← this is your function that builds the UI
 });
 
+console.log('yes')
+
 //square divs here
 const squareContainerArray = [];
 let latestFetchId = 0;

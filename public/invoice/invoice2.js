@@ -37,7 +37,7 @@ window.addEventListener('pageshow', (event) => {
   }
 });
 
-console.log(sessionStorage.getItem('filter_search'))
+console.log(sessionStorage.getItem('filter_search'), 'yes10')
 
 const digitToLetter = {
   '0': 'Z',

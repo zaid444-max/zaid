@@ -37,9 +37,10 @@ window.addEventListener('pageshow', (event) => {
     void document.body.offsetHeight; // Force reflow
     document.body.style.display = '';
     fetchPosInvoices();
-    
   }
 });
+
+console.log('yes9')
 
 const digitToLetter = {
   '0': 'Z',

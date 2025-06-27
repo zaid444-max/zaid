@@ -30,6 +30,12 @@ const pageInp = document.querySelector('.page-inp');
 pageInp.value = 50;
 let search = [];
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 const digitToLetter = {
   '0': 'Z',
   '1': 'O',

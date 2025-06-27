@@ -39,9 +39,19 @@ const workerNamesDiv = document.querySelector('.worker-names-div');
 
 window.addEventListener('pageshow', (event) => {
   if (event.persisted) {
-    window.location.reload();
+    console.log('Fixing black screen without full reload');
+    
+    // Force re-render
+    document.body.style.display = 'none';
+    void document.body.offsetHeight; // Force reflow
+    document.body.style.display = '';
+
+    //fetchItems(); // re-fetch your data if needed
   }
 });
+
+console.log('yes8')
+
 
 //square divs here
 const squareContainerArray = [];

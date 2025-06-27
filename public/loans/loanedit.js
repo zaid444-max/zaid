@@ -14,6 +14,12 @@ const balanceSpan = document.querySelector('.balance-span');
 
 const tableDiv = document.querySelector('.edit-table-div');
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 let isHeld = false;
 const handshakeIcon = document.querySelector('.fa-handshake');
 handshakeIcon.addEventListener('click', async () => {

@@ -49,6 +49,11 @@ const squareContainerArray = [];
 let latestFetchId = 0;
 async function fetchItems() {
   const thisFetchId = ++latestFetchId; // Increment global fetch ID
+    // Clear old UI and arrays before new fetch
+  squareContainerArray.length = 0;
+  itemList.length = 0;
+  squareContainer.innerHTML = '<p>Loading items...</p>';
+  
   await addPendingStockQnt();
   const scrollPosition = squareContainer.scrollTop;
   const page = pageInp.value === '' ? 50 : Number(pageInp.value);

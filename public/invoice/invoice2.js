@@ -39,7 +39,7 @@ window.addEventListener('pageshow', (event) => {
   }
 });
 
-cosole.log('notrhing')
+console.log('notrhing')
 
 const digitToLetter = {
   '0': 'Z',

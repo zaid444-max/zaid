@@ -39,10 +39,7 @@ const workerNamesDiv = document.querySelector('.worker-names-div');
 
 window.addEventListener('pageshow', (event) => {
   if (event.persisted) {
-    // Force re-render
-    document.body.style.display = 'none';
-    void document.body.offsetHeight; // Force reflow
-    document.body.style.display = '';
+    window.location.reload();
   }
 });
 

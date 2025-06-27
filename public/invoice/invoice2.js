@@ -33,9 +33,11 @@ let search = [];
 window.addEventListener('pageshow', (event) => {
   if (event.persisted) {
     searchInp.value = sessionStorage.getItem('filter_search') || '';
-window.location.reload();
+    window.location.reload();
   }
 });
+
+console.log(sessionStorage.getItem('filter_search'))
 
 const digitToLetter = {
   '0': 'Z',

@@ -39,12 +39,9 @@ const workerNamesDiv = document.querySelector('.worker-names-div');
 
 window.addEventListener('pageshow', (event) => {
   if (event.persisted) {
-    console.log('Page restored from cache, forcing reload');
     window.location.reload();
   }
 });
-
-console.log('yes7')
 
 //square divs here
 const squareContainerArray = [];

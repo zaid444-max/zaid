@@ -655,8 +655,7 @@ payButt.addEventListener('click', async () => {
     if (invoiceCheckbox.checked) {
       await printInvoice(addedInvoice.insertId)
     }
-    //location.reload(true); // Reload even if PDF fails
-    console.log('yes')
+    location.reload(true); // Reload even if PDF fails
   } else {
     Toastify({
       text: `Please select an item to pay`,

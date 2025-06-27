@@ -37,24 +37,7 @@ const discriptionModels = document.querySelector('.discriptionModels');
 const languageSelect = document.querySelector('.langause-select');
 const workerNamesDiv = document.querySelector('.worker-names-div');
 
-window.addEventListener('pageshow', () => {
-  // Force re-fetch
-  fetchItems();
-
-  // 💡 Force redraw: helpful for black screen issue
-  const container = document.querySelector('.square-item-container-div');
-  if (container) {
-    container.style.display = 'none';
-    void container.offsetHeight; // trigger reflow
-    container.style.display = '';
-  }
-
-  // 💡 Also scroll to top if content was pushed out of view
-  window.scrollTo(0, 0);
-});
-
-
-console.log('yes5')
+console.log('yes6')
 
 //square divs here
 const squareContainerArray = [];

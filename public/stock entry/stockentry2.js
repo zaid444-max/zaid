@@ -6,6 +6,12 @@ const inpValResetterIcon = document.querySelector('.fa-times-circle');
 const tableDiv = document.querySelector('.table-div');
 const searchInp = document.querySelector('.search-inp');
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 addStockentryButt.addEventListener('click', () => {
   document.body.classList.add('animate-out');
   setTimeout(() => {

@@ -12,6 +12,12 @@ const excelPrintIcon = document.querySelector('.print-container-div');
 const zeroIcon = document.querySelector('.zero');
 let isPendingDone = false;
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 // Fetch and display items from MySQL
 pageInp.value = 50;
 let latestFetchId = 0;

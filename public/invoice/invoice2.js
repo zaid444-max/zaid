@@ -32,7 +32,10 @@ let search = [];
 
 window.addEventListener('pageshow', (event) => {
   if (event.persisted) {
-    window.location.reload();
+    // Force re-render
+    document.body.style.display = 'none';
+    void document.body.offsetHeight; // Force reflow
+    document.body.style.display = '';
   }
 });
 

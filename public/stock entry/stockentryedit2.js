@@ -14,6 +14,12 @@ const excelIcon = document.querySelector('.fa-file-excel');
 const searchInp = document.querySelector('.search-inp');
 searchInp.value = localStorage.getItem('searchInpVal') || '';
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 if (localStorage.getItem('hideSaveButt') === 'true') {
   saveButt.style.display = 'none';
   localStorage.removeItem('hideSaveButt'); // Reset the flag after applying

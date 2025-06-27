@@ -5,6 +5,12 @@ const searchInp = document.querySelector('.search-inp3');
 const tableDiv = document.querySelector('.table-div');
 const cleanInpIcon = document.querySelector('.fa-times-circle');
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 addBrandButt.addEventListener('click', async () => {
   await fetch(`https://${serverIP}/category`, {
     method: 'POST',

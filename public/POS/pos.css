@@ -29,7 +29,7 @@ div {
 
 .worker-names-div {
   display: flex;
-  gap: 6vw;
+  gap: 1.6vw;
   margin-left: 1vw;
   font-size: 1vw;
   color: rgb(142, 238, 238);

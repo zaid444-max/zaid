@@ -38,11 +38,14 @@ const languageSelect = document.querySelector('.langause-select');
 const workerNamesDiv = document.querySelector('.worker-names-div');
 
 
-window.addEventListener('pageshow', () => {
-  fetchItems();
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    // Page loaded from back-forward cache
+    fetchItems();
+  }
 });
 
-console.log('yes2')
+console.log('yes3')
 
 //square divs here
 const squareContainerArray = [];

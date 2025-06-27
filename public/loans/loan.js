@@ -7,6 +7,12 @@ const endIndexInp = document.querySelector('.end-index-inp');
 const cleanerInpIcon = document.querySelector('.fa-times-circle');
 const tableDiv = document.querySelector('.table-div');
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 fetchCustomers();
 
 async function fetchCustomers() {

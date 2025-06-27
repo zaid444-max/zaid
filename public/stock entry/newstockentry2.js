@@ -10,6 +10,11 @@ const QntInp = document.querySelector('.quantity-inp');
 focusNextInput(buyPriceInp, 'buy-price');
 focusNextInput(QntInp, 'quantity');
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
 
 let itemIdList = [];
 async function fetchAllItems() {

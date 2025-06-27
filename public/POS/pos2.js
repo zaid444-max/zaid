@@ -37,7 +37,14 @@ const discriptionModels = document.querySelector('.discriptionModels');
 const languageSelect = document.querySelector('.langause-select');
 const workerNamesDiv = document.querySelector('.worker-names-div');
 
-console.log('yes6')
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    console.log('Page restored from cache, forcing reload');
+    window.location.reload();
+  }
+});
+
+console.log('yes7')
 
 //square divs here
 const squareContainerArray = [];

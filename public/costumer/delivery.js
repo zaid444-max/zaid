@@ -5,6 +5,12 @@ const searchInp = document.querySelector('.search-inp-customer');
 const tableDiv = document.querySelector('.table-div-customer');
 const cleanInpIcon = document.querySelector('.fa-times-circle');
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 addCustomerButt.addEventListener('click', async () => {
   await fetch(`https://${serverIP}/deliveries`, {
     method: 'POST',

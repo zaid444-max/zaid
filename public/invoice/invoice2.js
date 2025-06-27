@@ -35,14 +35,14 @@ window.addEventListener('DOMContentLoaded', () => {
   if (saved) {
     const filters = JSON.parse(saved);
     searchInp.value = filters.search || '';
-    priceSelect.value = filters.priceSelect || '';
-    deliverySelect.value = filters.deliverySelect || '';
+    priceSelect.value = filters.priceSelect || 'All';
+    deliverySelect.value = filters.deliverySelect || 'Both';
     customerInp.value = filters.customerInp || '';
     deliveryInp.value = filters.deliveryInp || '';
     workerInp.value = filters.workerInp || '';
-    pageInp.value = filters.pageInp || '';
-    startDateInp.value = filters.startDateInp || '';
-    endDateInp.value = filters.endDateInp || '';
+    pageInp.value = filters.pageInp || '50';
+    startDateInp.value = filters.startDateInp || getTwoMonthsAgo(getLatestDate());
+    endDateInp.value = filters.endDateInp || getLatestDate();
   }
 });
 

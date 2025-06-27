@@ -40,6 +40,12 @@ const discriptionModels = document.querySelector('.discriptionModels');
 const languageSelect = document.querySelector('.langause-select');
 const workerNamesDiv = document.querySelector('.worker-names-div');
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 const digitToLetter = {
   '0': 'Z',
   '1': 'O',

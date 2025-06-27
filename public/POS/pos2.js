@@ -46,9 +46,6 @@ window.addEventListener('pageshow', (event) => {
   }
 });
 
-console.log('yes9')
-
-
 //square divs here
 const squareContainerArray = [];
 let latestFetchId = 0;

@@ -39,8 +39,6 @@ window.addEventListener('pageshow', (event) => {
   }
 });
 
-console.log('notrhing')
-
 const digitToLetter = {
   '0': 'Z',
   '1': 'O',

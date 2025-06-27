@@ -33,10 +33,10 @@ if (topbarButt) {
   })
 }
 
-//const serverIP = 'ipower-backend.onrender.com';
-const serverIP = window.location.hostname;
-const port = ':3000';
-const htt = 'http'
+const serverIP = 'ipower-backend.onrender.com';
+//const serverIP = window.location.hostname;
+const port = '';
+const htt = 'https'
 
 const returnIcon = document.querySelector('.fa-arrow-left');
 if (returnIcon) {

@@ -39,6 +39,8 @@ window.addEventListener('pageshow', (event) => {
   }
 });
 
+cosole.log('notrhing')
+
 const digitToLetter = {
   '0': 'Z',
   '1': 'O',

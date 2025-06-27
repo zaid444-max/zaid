@@ -12,6 +12,12 @@ document.querySelectorAll('a').forEach(link => {
   });
 });
 
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    window.location.reload();
+  }
+});
+
 const sidebar = document.querySelector('.most-upper-head-div');
 
 document.addEventListener('mousemove', function(e) {

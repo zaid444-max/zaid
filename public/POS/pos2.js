@@ -43,6 +43,7 @@ window.addEventListener('pageshow', (event) => {
     document.body.style.display = 'none';
     void document.body.offsetHeight; // Force reflow
     document.body.style.display = '';
+    fetchItems(); // re-fetch your data if needed
   }
 });
 

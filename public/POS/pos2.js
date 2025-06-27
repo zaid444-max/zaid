@@ -37,26 +37,13 @@ const discriptionModels = document.querySelector('.discriptionModels');
 const languageSelect = document.querySelector('.langause-select');
 const workerNamesDiv = document.querySelector('.worker-names-div');
 
-
-window.addEventListener('pageshow', (event) => {
-  if (event.persisted) {
-    // Page loaded from back-forward cache
-    fetchItems();
-  }
-});
-
-console.log('yes3')
+console.log('yes4')
 
 //square divs here
 const squareContainerArray = [];
 let latestFetchId = 0;
 async function fetchItems() {
   const thisFetchId = ++latestFetchId; // Increment global fetch ID
-    // Clear old UI and arrays before new fetch
-  squareContainerArray.length = 0;
-  itemList.length = 0;
-  squareContainer.innerHTML = '<p>Loading items...</p>';
-  
   await addPendingStockQnt();
   const scrollPosition = squareContainer.scrollTop;
   const page = pageInp.value === '' ? 50 : Number(pageInp.value);
